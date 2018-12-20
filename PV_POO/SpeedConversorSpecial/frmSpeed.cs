@@ -12,10 +12,12 @@ namespace SpeedConversorSpecial
 {
     public partial class frmSpeed : SpeedConversorStandard.frmSpeed
     {
+        #region Instancias y variables globales
         Calculus CCalculusSpecial = new Calculus();
         SpeedConversorStandard.frmSpeed frmStandar = new SpeedConversorStandard.frmSpeed();
         ControlsPOO.SpeedControl controlspeed = new ControlsPOO.SpeedControl();
         private const string MensajeError = "Introduce un valor";
+        #endregion
 
         private string _Nave;
 
@@ -30,6 +32,7 @@ namespace SpeedConversorSpecial
             InitializeComponent();
         }
 
+        #region Eventos
         private void btnXWings_Click(object sender, EventArgs e)
         {
             try
@@ -72,5 +75,6 @@ namespace SpeedConversorSpecial
                 MessageBox.Show(MensajeError);
             }            
         }
+        #endregion
     }
 }
