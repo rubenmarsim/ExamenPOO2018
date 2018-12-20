@@ -15,6 +15,8 @@ namespace SpeedConversorSpecial
         Calculus CCalculusSpecial = new Calculus();
         SpeedConversorStandard.frmSpeed frmStandar = new SpeedConversorStandard.frmSpeed();
         ControlsPOO.SpeedControl controlspeed = new ControlsPOO.SpeedControl();
+        private const string MensajeError = "Introduce un valor";
+
         private string _Nave;
 
         public string Nave
@@ -30,23 +32,45 @@ namespace SpeedConversorSpecial
 
         private void btnXWings_Click(object sender, EventArgs e)
         {
-            Nave = "XW";
-            speedControl1.Valor = CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text), Nave);
-            speedControl1.txtBoxSpeed.Text = speedControl1.Valor.ToString();
+            try
+            {
+                Nave = "XW";
+                speedControl1.Valor = CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text), Nave);
+                speedControl1.txtBoxSpeed.Text = speedControl1.Valor.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show(MensajeError);
+            }
+            
         }
 
         private void btnShuttle_Click(object sender, EventArgs e)
         {
-            Nave = "CS";
-            speedControl1.Valor = CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text), Nave);
-            speedControl1.txtBoxSpeed.Text = speedControl1.Valor.ToString();
+            try
+            {
+                Nave = "CS";
+                speedControl1.Valor = CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text), Nave);
+                speedControl1.txtBoxSpeed.Text = speedControl1.Valor.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show(MensajeError);
+            }            
         }
 
         private void btnUnknown_Click(object sender, EventArgs e)
         {
-            Nave = "UR";
-            speedControl1.Valor = CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text));
-            speedControl1.txtBoxSpeed.Text = speedControl1.Valor.ToString();
+            try
+            {
+                Nave = "UR";
+                speedControl1.Valor = CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text));
+                speedControl1.txtBoxSpeed.Text = speedControl1.Valor.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show(MensajeError);
+            }            
         }
     }
 }

@@ -21,8 +21,16 @@ namespace SpeedConversorStandard
 
         private void btnConvert_Click(object sender, EventArgs e)
         {
-            speedControl1.Valor = CCalculusStandard.SpeedConversion(int.Parse(txtBoxParsecs.Text));
-            speedControl1.txtBoxSpeed.Text = speedControl1.Valor.ToString();
+            try
+            {
+                speedControl1.Valor = CCalculusStandard.SpeedConversion(int.Parse(txtBoxParsecs.Text));
+                speedControl1.txtBoxSpeed.Text = speedControl1.Valor.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Introduce un valor");
+            }
+            
         }
     }
 }
