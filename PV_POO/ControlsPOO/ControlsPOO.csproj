@@ -65,5 +65,14 @@
       <DependentUpon>SpeedControl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unknown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

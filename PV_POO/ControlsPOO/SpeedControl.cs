@@ -26,28 +26,31 @@ namespace ControlsPOO
             set { _Valor = value; }
         }
 
-        double val=0;
+        double val=3;
+        
         #endregion
 
         #region Eventos
         private void txtBoxSpeed_TextChanged(object sender, EventArgs e)
         {
-            txtBoxSpeed.Text = Valor;
             val = double.Parse(Valor);
+            txtBoxSpeed.Text = Valor;
+            
             if (val< 100000)
             {
-                pctBoxSpeed.Image = Image.FromFile(@"\images\slow.png");
+                pctBoxSpeed.ImageLocation = Application.StartupPath + @"\\images\slow.png";
             }
             else
             {
-                pctBoxSpeed.Image = Image.FromFile(@"\images\fast.png");
+                pctBoxSpeed.ImageLocation = Application.StartupPath + @"\\images\fast.png";
             }
         }
-        #endregion
+        
 
         private void SpeedControl_Load(object sender, EventArgs e)
         {
-            pctBoxSpeed.Image = Image.FromFile(@"\images\unknown.png");
+            if(Valor == null) Valor = "0";   
         }
+        #endregion
     }
 }

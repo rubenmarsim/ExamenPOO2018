@@ -53,6 +53,7 @@
             // 
             // pctBoxSpeed
             // 
+            this.pctBoxSpeed.Image = global::ControlsPOO.Properties.Resources.unknown;
             this.pctBoxSpeed.Location = new System.Drawing.Point(215, 3);
             this.pctBoxSpeed.Name = "pctBoxSpeed";
             this.pctBoxSpeed.Size = new System.Drawing.Size(98, 90);

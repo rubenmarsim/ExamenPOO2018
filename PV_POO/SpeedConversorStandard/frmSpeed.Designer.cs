@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.speedControl1 = new ControlsPOO.SpeedControl();
+            this.SuspendLayout();
+            // 
+            // speedControl1
+            // 
+            this.speedControl1.Location = new System.Drawing.Point(154, 86);
+            this.speedControl1.Name = "speedControl1";
+            this.speedControl1.Size = new System.Drawing.Size(320, 102);
+            this.speedControl1.TabIndex = 0;
+            this.speedControl1.Valor = null;
+            // 
+            // frmSpeed
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.speedControl1);
+            this.Name = "frmSpeed";
             this.Text = "frmSpeed";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private ControlsPOO.SpeedControl speedControl1;
     }
 }

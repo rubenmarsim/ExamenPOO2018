@@ -52,5 +52,16 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlsPOO\ControlsPOO.csproj">
+      <Project>{D59AC304-BD7C-49D5-9FEC-592272B3940F}</Project>
+      <Name>ControlsPOO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmSpeed.resx">
+      <DependentUpon>frmSpeed.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
