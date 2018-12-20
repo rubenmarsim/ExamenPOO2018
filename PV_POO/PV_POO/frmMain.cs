@@ -16,5 +16,21 @@ namespace PV_POO
         {
             InitializeComponent();
         }
+        #region Instancias
+        SpeedConversorStandard.frmSpeed frmSCStandard = new SpeedConversorStandard.frmSpeed();
+        SpeedConversorSpecial.frmSpeed frmSCSpecial = new SpeedConversorSpecial.frmSpeed();
+        #endregion
+
+        #region Eventos
+        private void btnSCStandard_Click(object sender, EventArgs e)
+        {
+            frmSCStandard.Show();
+        }
+
+        private void btnSCSpecial_Click(object sender, EventArgs e)
+        {
+            frmSCSpecial.Show();
+        }
+        #endregion
     }
 }

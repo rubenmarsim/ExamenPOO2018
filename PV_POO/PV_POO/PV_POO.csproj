@@ -80,5 +80,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpeedConversorSpecial\SpeedConversorSpecial.csproj">
+      <Project>{ba60e809-b0c7-4eaf-aae3-609e3f682691}</Project>
+      <Name>SpeedConversorSpecial</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpeedConversorStandard\SpeedConversorStandard.csproj">
+      <Project>{aaf6c524-df9a-4c4d-b1c8-3aebae2f405c}</Project>
+      <Name>SpeedConversorStandard</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
