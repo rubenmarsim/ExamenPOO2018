@@ -33,11 +33,11 @@
             // 
             // speedControl1
             // 
-            this.speedControl1.Location = new System.Drawing.Point(154, 86);
+            this.speedControl1.Location = new System.Drawing.Point(81, 207);
             this.speedControl1.Name = "speedControl1";
             this.speedControl1.Size = new System.Drawing.Size(320, 102);
             this.speedControl1.TabIndex = 0;
-            this.speedControl1.Valor = null;
+            this.speedControl1.Valor = "0";
             // 
             // frmSpeed
             // 

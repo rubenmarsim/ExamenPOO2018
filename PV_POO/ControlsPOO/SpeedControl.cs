@@ -26,7 +26,7 @@ namespace ControlsPOO
             set { _Valor = value; }
         }
 
-        double val=3;
+        double val = 0;
         
         #endregion
 

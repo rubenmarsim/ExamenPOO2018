@@ -47,6 +47,7 @@
             // 
             this.txtBoxSpeed.Location = new System.Drawing.Point(95, 33);
             this.txtBoxSpeed.Name = "txtBoxSpeed";
+            this.txtBoxSpeed.ReadOnly = true;
             this.txtBoxSpeed.Size = new System.Drawing.Size(100, 20);
             this.txtBoxSpeed.TabIndex = 1;
             this.txtBoxSpeed.TextChanged += new System.EventHandler(this.txtBoxSpeed_TextChanged);
