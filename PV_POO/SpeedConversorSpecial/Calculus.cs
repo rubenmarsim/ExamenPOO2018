@@ -21,7 +21,7 @@ namespace SpeedConversorSpecial
             int res = 0;
             if (nave.Equals("XW"))
             {
-                res = base.SpeedConversion(parsecs)*3;
+                res = base.SpeedConversion(parsecs) * 3;
             }
             else if (nave.Equals("CS"))
             {
