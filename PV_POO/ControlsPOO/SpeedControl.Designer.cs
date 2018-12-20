@@ -80,7 +80,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblSpeed;
-        private System.Windows.Forms.TextBox txtBoxSpeed;
         private System.Windows.Forms.PictureBox pctBoxSpeed;
+        public System.Windows.Forms.TextBox txtBoxSpeed;
     }
 }

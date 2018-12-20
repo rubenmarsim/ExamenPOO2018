@@ -18,25 +18,24 @@ namespace ControlsPOO
         }
 
         #region Propiedades y variables
-        private string _Valor;
+        private int _Valor;
 
-        public string Valor
+        public int Valor
         {
             get { return _Valor; }
             set { _Valor = value; }
         }
 
-        double val = 0;
+        int val = 0;
         
         #endregion
 
         #region Eventos
         private void txtBoxSpeed_TextChanged(object sender, EventArgs e)
         {
-            val = double.Parse(Valor);
-            txtBoxSpeed.Text = Valor;
+            txtBoxSpeed.Text = Valor.ToString();
             
-            if (val< 100000)
+            if (Valor<100000)
             {
                 pctBoxSpeed.ImageLocation = Application.StartupPath + @"\\images\slow.png";
             }
@@ -49,7 +48,7 @@ namespace ControlsPOO
 
         private void SpeedControl_Load(object sender, EventArgs e)
         {
-            if(Valor == null) Valor = "0";   
+            if(Valor == null) Valor = 0;   
         }
         #endregion
     }
