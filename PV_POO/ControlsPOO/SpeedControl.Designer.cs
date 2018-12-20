@@ -28,11 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.lblSpeed = new System.Windows.Forms.Label();
+            this.txtBoxSpeed = new System.Windows.Forms.TextBox();
+            this.pctBoxSpeed = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pctBoxSpeed)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lblSpeed
+            // 
+            this.lblSpeed.AutoSize = true;
+            this.lblSpeed.Location = new System.Drawing.Point(4, 36);
+            this.lblSpeed.Name = "lblSpeed";
+            this.lblSpeed.Size = new System.Drawing.Size(72, 13);
+            this.lblSpeed.TabIndex = 0;
+            this.lblSpeed.Text = "Speed (Km/s)";
+            // 
+            // txtBoxSpeed
+            // 
+            this.txtBoxSpeed.Location = new System.Drawing.Point(95, 33);
+            this.txtBoxSpeed.Name = "txtBoxSpeed";
+            this.txtBoxSpeed.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxSpeed.TabIndex = 1;
+            this.txtBoxSpeed.TextChanged += new System.EventHandler(this.txtBoxSpeed_TextChanged);
+            // 
+            // pctBoxSpeed
+            // 
+            this.pctBoxSpeed.Location = new System.Drawing.Point(215, 3);
+            this.pctBoxSpeed.Name = "pctBoxSpeed";
+            this.pctBoxSpeed.Size = new System.Drawing.Size(98, 90);
+            this.pctBoxSpeed.TabIndex = 2;
+            this.pctBoxSpeed.TabStop = false;
+            // 
+            // SpeedControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pctBoxSpeed);
+            this.Controls.Add(this.txtBoxSpeed);
+            this.Controls.Add(this.lblSpeed);
+            this.Name = "SpeedControl";
+            this.Size = new System.Drawing.Size(320, 102);
+            this.Load += new System.EventHandler(this.SpeedControl_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pctBoxSpeed)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblSpeed;
+        private System.Windows.Forms.TextBox txtBoxSpeed;
+        private System.Windows.Forms.PictureBox pctBoxSpeed;
     }
 }
