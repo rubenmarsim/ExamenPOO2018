@@ -31,19 +31,22 @@ namespace SpeedConversorSpecial
         private void btnXWings_Click(object sender, EventArgs e)
         {
             Nave = "XW";
-           CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text), Nave);
+            speedControl1.Valor = CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text), Nave);
+            speedControl1.txtBoxSpeed.Text = speedControl1.Valor.ToString();
         }
 
         private void btnShuttle_Click(object sender, EventArgs e)
         {
             Nave = "CS";
-            CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text), Nave);
+            speedControl1.Valor = CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text), Nave);
+            speedControl1.txtBoxSpeed.Text = speedControl1.Valor.ToString();
         }
 
         private void btnUnknown_Click(object sender, EventArgs e)
         {
             Nave = "UR";
-            CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text));
+            speedControl1.Valor = CCalculusSpecial.SpeedConversion(int.Parse(txtBoxParsecs.Text));
+            speedControl1.txtBoxSpeed.Text = speedControl1.Valor.ToString();
         }
     }
 }
