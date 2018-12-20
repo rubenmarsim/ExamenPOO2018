@@ -52,5 +52,20 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmSpeed.resx">
+      <DependentUpon>frmSpeed.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlsPOO\ControlsPOO.csproj">
+      <Project>{d59ac304-bd7c-49d5-9fec-592272b3940f}</Project>
+      <Name>ControlsPOO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpeedConversorStandard\SpeedConversorStandard.csproj">
+      <Project>{aaf6c524-df9a-4c4d-b1c8-3aebae2f405c}</Project>
+      <Name>SpeedConversorStandard</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

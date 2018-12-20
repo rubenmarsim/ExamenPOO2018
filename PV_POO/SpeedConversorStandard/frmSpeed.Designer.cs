@@ -101,8 +101,8 @@
 
         private ControlsPOO.SpeedControl speedControl1;
         private System.Windows.Forms.Label lblParsecs;
-        private System.Windows.Forms.TextBox txtBoxParsecs;
         private System.Windows.Forms.GroupBox grpBoxCalculation;
         private System.Windows.Forms.Button btnConvert;
+        public System.Windows.Forms.TextBox txtBoxParsecs;
     }
 }

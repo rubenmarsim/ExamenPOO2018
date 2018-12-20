@@ -8,7 +8,7 @@ namespace SpeedConversorStandard
 {
     public class Calculus
     {
-        public int SpeedConversion(int parsecs)
+        virtual public int SpeedConversion(int parsecs)
         {
             int result = 0;
             result = parsecs * 1500;
